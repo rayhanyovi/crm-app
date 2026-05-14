@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="UnifiedCRM">
+  <rect width="512" height="512" rx="112" fill="#2563EB"/>
+  <path fill="#fff" d="M128 144h74v224h-74zM219 144h74v224h-74zM310 144h74v224h-74z"/>
+  <path fill="#BFDBFE" d="M128 330h256v54H128z"/>
+</svg>
