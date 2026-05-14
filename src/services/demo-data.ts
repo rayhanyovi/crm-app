@@ -4,18 +4,12 @@ import type {
   Contact,
   ContactDetail,
   ContactListItem,
+  Deal,
+  DealStageHistory,
 } from "@/types/crm";
 
-export type DemoDeal = {
-  id: string;
-  title: string;
-  value: number;
-  stage: string;
-  contact_id: string;
-  company_id: string | null;
-  assigned_to_id: string | null;
-  deleted_at: string | null;
-};
+/** @deprecated Use Deal from @/types/crm directly */
+export type DemoDeal = Deal;
 
 export type DemoLead = {
   id: string;
@@ -137,7 +131,7 @@ const contacts: Contact[] = [
   },
 ];
 
-const deals: DemoDeal[] = [
+const deals: Deal[] = [
   {
     id: "40000000-0000-4000-8000-000000000001",
     title: "Acme CRM rollout",
@@ -145,7 +139,14 @@ const deals: DemoDeal[] = [
     stage: "PROPOSAL",
     contact_id: contacts[0].id,
     company_id: companies[0].id,
+    lead_id: null,
     assigned_to_id: DEMO_ACCOUNTS[2].id,
+    expected_close_date: "2026-06-30",
+    lost_reason: null,
+    closed_at: null,
+    created_by_id: DEMO_ACCOUNTS[2].id,
+    created_at: now,
+    updated_at: now,
     deleted_at: null,
   },
   {
@@ -155,7 +156,14 @@ const deals: DemoDeal[] = [
     stage: "NEGOTIATION",
     contact_id: contacts[1].id,
     company_id: companies[1].id,
+    lead_id: null,
     assigned_to_id: DEMO_ACCOUNTS[1].id,
+    expected_close_date: "2026-05-31",
+    lost_reason: null,
+    closed_at: null,
+    created_by_id: DEMO_ACCOUNTS[1].id,
+    created_at: now,
+    updated_at: now,
     deleted_at: null,
   },
   {
@@ -165,8 +173,79 @@ const deals: DemoDeal[] = [
     stage: "QUALIFIED",
     contact_id: contacts[2].id,
     company_id: companies[2].id,
+    lead_id: null,
     assigned_to_id: DEMO_ACCOUNTS[2].id,
+    expected_close_date: "2026-07-15",
+    lost_reason: null,
+    closed_at: null,
+    created_by_id: DEMO_ACCOUNTS[2].id,
+    created_at: now,
+    updated_at: now,
     deleted_at: null,
+  },
+  {
+    id: "40000000-0000-4000-8000-000000000004",
+    title: "Brightpath dispatch upgrade",
+    value: 27500,
+    stage: "LEAD",
+    contact_id: contacts[0].id,
+    company_id: companies[3].id,
+    lead_id: null,
+    assigned_to_id: DEMO_ACCOUNTS[2].id,
+    expected_close_date: "2026-08-01",
+    lost_reason: null,
+    closed_at: null,
+    created_by_id: DEMO_ACCOUNTS[2].id,
+    created_at: now,
+    updated_at: now,
+    deleted_at: null,
+  },
+  {
+    id: "40000000-0000-4000-8000-000000000005",
+    title: "Acme expansion — Q3",
+    value: 62000,
+    stage: "CLOSED_WON",
+    contact_id: contacts[0].id,
+    company_id: companies[0].id,
+    lead_id: null,
+    assigned_to_id: DEMO_ACCOUNTS[2].id,
+    expected_close_date: "2026-04-30",
+    lost_reason: null,
+    closed_at: "2026-04-28T10:00:00.000Z",
+    created_by_id: DEMO_ACCOUNTS[2].id,
+    created_at: now,
+    updated_at: now,
+    deleted_at: null,
+  },
+];
+
+const dealStageHistory: DealStageHistory[] = [
+  {
+    id: "60000000-0000-4000-8000-000000000001",
+    deal_id: "40000000-0000-4000-8000-000000000001",
+    from_stage: null,
+    to_stage: "LEAD",
+    changed_by_id: DEMO_ACCOUNTS[2].id,
+    note: null,
+    created_at: now,
+  },
+  {
+    id: "60000000-0000-4000-8000-000000000002",
+    deal_id: "40000000-0000-4000-8000-000000000001",
+    from_stage: "LEAD",
+    to_stage: "QUALIFIED",
+    changed_by_id: DEMO_ACCOUNTS[2].id,
+    note: "Confirmed budget and timeline.",
+    created_at: now,
+  },
+  {
+    id: "60000000-0000-4000-8000-000000000003",
+    deal_id: "40000000-0000-4000-8000-000000000001",
+    from_stage: "QUALIFIED",
+    to_stage: "PROPOSAL",
+    changed_by_id: DEMO_ACCOUNTS[2].id,
+    note: "Proposal sent.",
+    created_at: now,
   },
 ];
 
@@ -223,6 +302,7 @@ export const demoStore = {
   companies,
   contacts,
   deals,
+  dealStageHistory,
   leads,
   activities,
 };

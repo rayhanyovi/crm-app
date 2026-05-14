@@ -1,4 +1,4 @@
-import type { LeadSource } from "@/types/enums";
+import type { DealStage, LeadSource } from "@/types/enums";
 
 export type Company = {
   id: string;
@@ -85,4 +85,61 @@ export type PaginationMeta = {
 export type DuplicateCompanyResult = {
   exactMatch: Company | null;
   similarMatches: Array<Company & { similarity: number }>;
+};
+
+// ─── Deals ───────────────────────────────────────────────────────────────────
+
+export type Deal = {
+  id: string;
+  title: string;
+  value: number;
+  stage: DealStage;
+  contact_id: string;
+  company_id: string | null;
+  lead_id: string | null;
+  assigned_to_id: string | null;
+  expected_close_date: string | null;
+  lost_reason: string | null;
+  closed_at: string | null;
+  created_by_id: string;
+  created_at: string;
+  updated_at: string;
+  deleted_at: string | null;
+};
+
+export type DealListItem = Deal & {
+  contact_name: string;
+  company_name: string | null;
+  assignee_name: string | null;
+};
+
+export type DealStageHistory = {
+  id: string;
+  deal_id: string;
+  from_stage: DealStage | null;
+  to_stage: DealStage;
+  changed_by_id: string;
+  note: string | null;
+  created_at: string;
+  changed_by?: { first_name: string; last_name: string };
+};
+
+export type DealDetail = DealListItem & {
+  contact: Pick<Contact, "id" | "first_name" | "last_name" | "email" | "phone"> | null;
+  company: Pick<Company, "id" | "name" | "industry"> | null;
+  stage_history: DealStageHistory[];
+  recent_activities: Array<{
+    id: string;
+    type: string;
+    subject: string;
+    completed_at: string | null;
+    created_at: string;
+  }>;
+};
+
+export type PipelineStageData = {
+  stage: DealStage;
+  count: number;
+  totalValue: number;
+  deals: DealListItem[];
 };

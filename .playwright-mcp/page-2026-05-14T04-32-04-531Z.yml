@@ -1,0 +1,155 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - generic [ref=e8]:
+          - generic [ref=e9]: UnifiedCRM
+          - generic [ref=e10]: Demo workspace
+      - navigation [ref=e11]:
+        - link "Dashboard" [ref=e12] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e13]
+          - generic [ref=e18]: Dashboard
+        - link "Leads" [ref=e19] [cursor=pointer]:
+          - /url: /leads
+          - img [ref=e20]
+          - generic [ref=e23]: Leads
+        - link "Contacts" [ref=e24] [cursor=pointer]:
+          - /url: /contacts
+          - img [ref=e25]
+          - generic [ref=e29]: Contacts
+        - link "Companies" [ref=e30] [cursor=pointer]:
+          - /url: /companies
+          - img [ref=e31]
+          - generic [ref=e35]: Companies
+        - link "Deals" [ref=e36] [cursor=pointer]:
+          - /url: /deals
+          - img [ref=e37]
+          - generic [ref=e43]: Deals
+        - link "Activities" [ref=e44] [cursor=pointer]:
+          - /url: /activities
+          - img [ref=e45]
+          - generic [ref=e47]: Activities
+        - link "Team" [ref=e48] [cursor=pointer]:
+          - /url: /team
+          - img [ref=e49]
+          - generic [ref=e53]: Team
+        - link "Audit Logs" [ref=e54] [cursor=pointer]:
+          - /url: /audit-logs
+          - img [ref=e55]
+          - generic [ref=e60]: Audit Logs
+    - generic [ref=e61]:
+      - banner [ref=e62]:
+        - generic [ref=e63]:
+          - generic [ref=e64]: Deals
+          - generic [ref=e65]: UnifiedCRM demo
+        - generic [ref=e66]:
+          - button "Search Ctrl K" [ref=e67] [cursor=pointer]:
+            - img
+            - generic [ref=e68]: Search
+            - generic [ref=e69]: Ctrl K
+          - button "Notifications" [ref=e70] [cursor=pointer]:
+            - img
+          - button "AU Admin" [ref=e71] [cursor=pointer]:
+            - generic [ref=e73]: AU
+            - generic [ref=e74]: Admin
+      - main [ref=e75]:
+        - generic [ref=e281]:
+          - generic [ref=e282]:
+            - generic [ref=e283]:
+              - heading "Pipeline" [level=1] [ref=e284]
+              - paragraph [ref=e285]: Move deals through stages and review pipeline value by stage.
+            - generic [ref=e286]:
+              - link "Table" [ref=e287] [cursor=pointer]:
+                - /url: /deals
+                - img
+                - text: Table
+              - button "Add Deal" [ref=e288] [cursor=pointer]:
+                - img
+                - text: Add Deal
+          - combobox [ref=e290] [cursor=pointer]:
+            - generic: All owners
+            - img
+          - generic [ref=e291]:
+            - generic [ref=e292]:
+              - generic [ref=e293]:
+                - generic [ref=e294]:
+                  - generic [ref=e295]: Lead
+                  - generic [ref=e296]: "0"
+                - generic [ref=e297]: $0
+              - generic [ref=e299]: No lead deals
+            - generic [ref=e300]:
+              - generic [ref=e301]:
+                - generic [ref=e302]:
+                  - generic [ref=e303]: Qualified
+                  - generic [ref=e304]: "1"
+                - generic [ref=e305]: $18,000
+              - button "Ledgerline pilot $18,000 Sales Rep Nora Chen" [ref=e307]:
+                - generic [ref=e308]:
+                  - link "Ledgerline pilot" [ref=e309] [cursor=pointer]:
+                    - /url: /deals/40000000-0000-4000-8000-000000000003
+                  - generic [ref=e310]:
+                    - generic [ref=e311]: $18,000
+                    - generic [ref=e312]: Sales Rep
+                  - generic [ref=e313]: Nora Chen
+            - generic [ref=e314]:
+              - generic [ref=e315]:
+                - generic [ref=e316]:
+                  - generic [ref=e317]: Proposal
+                  - generic [ref=e318]: "2"
+                - generic [ref=e319]: $57,345
+              - generic [ref=e320]:
+                - button "Acme CRM rollout $45,000 Sales Rep Maya Patel" [ref=e321]:
+                  - generic [ref=e322]:
+                    - link "Acme CRM rollout" [ref=e323] [cursor=pointer]:
+                      - /url: /deals/40000000-0000-4000-8000-000000000001
+                    - generic [ref=e324]:
+                      - generic [ref=e325]: $45,000
+                      - generic [ref=e326]: Sales Rep
+                    - generic [ref=e327]: Maya Patel
+                - button "Smoke Deal 20260514113137 $12,345 Sales Rep Phase TwoSmoke" [ref=e328]:
+                  - generic [ref=e329]:
+                    - link "Smoke Deal 20260514113137" [ref=e330] [cursor=pointer]:
+                      - /url: /deals/8590c9cf-4f86-423a-adb8-763ff9e1acd7
+                    - generic [ref=e331]:
+                      - generic [ref=e332]: $12,345
+                      - generic [ref=e333]: Sales Rep
+                    - generic [ref=e334]: Phase TwoSmoke
+            - generic [ref=e335]:
+              - generic [ref=e336]:
+                - generic [ref=e337]:
+                  - generic [ref=e338]: Negotiation
+                  - generic [ref=e339]: "1"
+                - generic [ref=e340]: $32,000
+              - button "Northstar team dashboard $32,000 Manager User Julian Reed" [ref=e342]:
+                - generic [ref=e343]:
+                  - link "Northstar team dashboard" [ref=e344] [cursor=pointer]:
+                    - /url: /deals/40000000-0000-4000-8000-000000000002
+                  - generic [ref=e345]:
+                    - generic [ref=e346]: $32,000
+                    - generic [ref=e347]: Manager User
+                  - generic [ref=e348]: Julian Reed
+            - generic [ref=e349]:
+              - generic [ref=e350]:
+                - generic [ref=e351]:
+                  - generic [ref=e352]: Closed Won
+                  - generic [ref=e353]: "0"
+                - generic [ref=e354]: $0
+              - generic [ref=e356]: No closed won deals
+            - generic [ref=e357]:
+              - generic [ref=e358]:
+                - generic [ref=e359]:
+                  - generic [ref=e360]: Closed Lost
+                  - generic [ref=e361]: "0"
+                - generic [ref=e362]: $0
+              - generic [ref=e364]: No closed lost deals
+          - status [ref=e365]
+  - generic [ref=e181]:
+    - img [ref=e183]
+    - button "Open Tanstack query devtools" [ref=e231] [cursor=pointer]:
+      - img [ref=e232]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e177] [cursor=pointer]:
+    - img [ref=e178]
+  - alert [ref=e280]

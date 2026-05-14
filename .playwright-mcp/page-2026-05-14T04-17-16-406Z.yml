@@ -1,0 +1,49 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - generic [ref=e9]:
+          - generic [ref=e10]: UnifiedCRM Demo
+          - paragraph [ref=e11]: Select an account to continue.
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - button "Admin User Admin Full access, audit logs, and team controls." [ref=e14] [cursor=pointer]:
+            - generic [ref=e15]:
+              - generic [ref=e16]:
+                - img [ref=e18]
+                - generic [ref=e21]:
+                  - generic [ref=e22]: Admin User
+                  - generic [ref=e23]: Admin
+              - img [ref=e24]
+            - paragraph [ref=e26]: Full access, audit logs, and team controls.
+          - button "Manager User Manager Team oversight, assignment, and shared pipeline work." [ref=e27] [cursor=pointer]:
+            - generic [ref=e28]:
+              - generic [ref=e29]:
+                - img [ref=e31]
+                - generic [ref=e34]:
+                  - generic [ref=e35]: Manager User
+                  - generic [ref=e36]: Manager
+              - img [ref=e37]
+            - paragraph [ref=e39]: Team oversight, assignment, and shared pipeline work.
+          - button "Sales Rep Sales Rep Front-line CRM workflow for owned records." [ref=e40] [cursor=pointer]:
+            - generic [ref=e41]:
+              - generic [ref=e42]:
+                - img [ref=e44]
+                - generic [ref=e47]:
+                  - generic [ref=e48]: Sales Rep
+                  - generic [ref=e49]: Sales Rep
+              - img [ref=e50]
+            - paragraph [ref=e52]: Front-line CRM workflow for owned records.
+          - button "Viewer User Viewer Read-only access for browsing demo data." [ref=e53] [cursor=pointer]:
+            - generic [ref=e54]:
+              - generic [ref=e55]:
+                - img [ref=e57]
+                - generic [ref=e60]:
+                  - generic [ref=e61]: Viewer User
+                  - generic [ref=e62]: Viewer
+              - img [ref=e63]
+            - paragraph [ref=e65]: Read-only access for browsing demo data.
+        - generic [ref=e67]: Built with Next.js + Supabase
+  - region "Notifications alt+T"
+  - alert [ref=e68]

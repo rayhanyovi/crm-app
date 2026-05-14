@@ -1,0 +1,178 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - generic [ref=e8]:
+          - generic [ref=e9]: UnifiedCRM
+          - generic [ref=e10]: Demo workspace
+      - navigation [ref=e11]:
+        - link "Dashboard" [ref=e12] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e13]
+          - generic [ref=e18]: Dashboard
+        - link "Leads" [ref=e19] [cursor=pointer]:
+          - /url: /leads
+          - img [ref=e20]
+          - generic [ref=e23]: Leads
+        - link "Contacts" [ref=e24] [cursor=pointer]:
+          - /url: /contacts
+          - img [ref=e25]
+          - generic [ref=e29]: Contacts
+        - link "Companies" [ref=e30] [cursor=pointer]:
+          - /url: /companies
+          - img [ref=e31]
+          - generic [ref=e35]: Companies
+        - link "Deals" [ref=e36] [cursor=pointer]:
+          - /url: /deals
+          - img [ref=e37]
+          - generic [ref=e43]: Deals
+        - link "Activities" [ref=e44] [cursor=pointer]:
+          - /url: /activities
+          - img [ref=e45]
+          - generic [ref=e47]: Activities
+        - link "Team" [ref=e48] [cursor=pointer]:
+          - /url: /team
+          - img [ref=e49]
+          - generic [ref=e53]: Team
+        - link "Audit Logs" [ref=e54] [cursor=pointer]:
+          - /url: /audit-logs
+          - img [ref=e55]
+          - generic [ref=e60]: Audit Logs
+    - generic [ref=e61]:
+      - banner [ref=e62]:
+        - generic [ref=e63]:
+          - generic [ref=e64]: Deals
+          - generic [ref=e65]: UnifiedCRM demo
+        - generic [ref=e66]:
+          - button "Search Ctrl K" [ref=e67] [cursor=pointer]:
+            - img
+            - generic [ref=e68]: Search
+            - generic [ref=e69]: Ctrl K
+          - button "Notifications" [ref=e70] [cursor=pointer]:
+            - img
+          - button "AU Admin" [ref=e71] [cursor=pointer]:
+            - generic [ref=e73]: AU
+            - generic [ref=e74]: Admin
+      - main [ref=e75]:
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - generic [ref=e78]:
+              - heading "Deals" [level=1] [ref=e79]
+              - paragraph [ref=e80]: Track active opportunities from first qualification to close.
+            - generic [ref=e81]:
+              - link "Pipeline" [ref=e82] [cursor=pointer]:
+                - /url: /deals/pipeline
+                - img
+                - text: Pipeline
+              - button "Add Deal" [ref=e83] [cursor=pointer]:
+                - img
+                - text: Add Deal
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - img
+              - textbox "Search deals..." [ref=e86]
+            - generic [ref=e87]:
+              - combobox [ref=e88] [cursor=pointer]:
+                - img
+              - combobox [ref=e89]
+              - combobox [ref=e90] [cursor=pointer]:
+                - img
+              - combobox [ref=e91]
+          - table [ref=e95]:
+            - rowgroup [ref=e96]:
+              - row "Deal Company Stage Value Assigned To Close Date" [ref=e97]:
+                - columnheader "Deal" [ref=e98]:
+                  - link "Deal" [ref=e99] [cursor=pointer]:
+                    - /url: "?sortBy=title&sortOrder=asc"
+                - columnheader "Company" [ref=e100]
+                - columnheader "Stage" [ref=e101]:
+                  - link "Stage" [ref=e102] [cursor=pointer]:
+                    - /url: "?sortBy=stage&sortOrder=asc"
+                - columnheader "Value" [ref=e103]:
+                  - link "Value" [ref=e104] [cursor=pointer]:
+                    - /url: "?sortBy=value&sortOrder=asc"
+                - columnheader "Assigned To" [ref=e105]
+                - columnheader "Close Date" [ref=e106]:
+                  - link "Close Date" [ref=e107] [cursor=pointer]:
+                    - /url: "?sortBy=expected_close_date&sortOrder=asc"
+                - columnheader [ref=e108]
+            - rowgroup [ref=e109]:
+              - row "Smoke Deal 20260514113137 Phase TwoSmoke Unassigned Proposal $12,345 Sales Rep 15/08/2026 Actions" [ref=e110]:
+                - cell "Smoke Deal 20260514113137 Phase TwoSmoke" [ref=e111]:
+                  - generic [ref=e112]:
+                    - link "Smoke Deal 20260514113137" [ref=e113] [cursor=pointer]:
+                      - /url: /deals/8590c9cf-4f86-423a-adb8-763ff9e1acd7
+                    - generic [ref=e114]: Phase TwoSmoke
+                - cell "Unassigned" [ref=e115]
+                - cell "Proposal" [ref=e116]:
+                  - generic [ref=e117]: Proposal
+                - cell "$12,345" [ref=e118]
+                - cell "Sales Rep" [ref=e119]
+                - cell "15/08/2026" [ref=e120]
+                - cell "Actions" [ref=e121]:
+                  - button "Actions" [ref=e122] [cursor=pointer]:
+                    - img
+                    - generic [ref=e123]: Actions
+              - row "Acme CRM rollout Maya Patel Acme Analytics Proposal $45,000 Sales Rep 04/06/2026 Actions" [ref=e124]:
+                - cell "Acme CRM rollout Maya Patel" [ref=e125]:
+                  - generic [ref=e126]:
+                    - link "Acme CRM rollout" [ref=e127] [cursor=pointer]:
+                      - /url: /deals/40000000-0000-4000-8000-000000000001
+                    - generic [ref=e128]: Maya Patel
+                - cell "Acme Analytics" [ref=e129]:
+                  - link "Acme Analytics" [ref=e130] [cursor=pointer]:
+                    - /url: /companies/10000000-0000-4000-8000-000000000001
+                - cell "Proposal" [ref=e131]:
+                  - generic [ref=e132]: Proposal
+                - cell "$45,000" [ref=e133]
+                - cell "Sales Rep" [ref=e134]
+                - cell "04/06/2026" [ref=e135]
+                - cell "Actions" [ref=e136]:
+                  - button "Actions" [ref=e137] [cursor=pointer]:
+                    - img
+                    - generic [ref=e138]: Actions
+              - row "Northstar team dashboard Julian Reed Northstar Health Negotiation $32,000 Manager User 28/05/2026 Actions" [ref=e139]:
+                - cell "Northstar team dashboard Julian Reed" [ref=e140]:
+                  - generic [ref=e141]:
+                    - link "Northstar team dashboard" [ref=e142] [cursor=pointer]:
+                      - /url: /deals/40000000-0000-4000-8000-000000000002
+                    - generic [ref=e143]: Julian Reed
+                - cell "Northstar Health" [ref=e144]:
+                  - link "Northstar Health" [ref=e145] [cursor=pointer]:
+                    - /url: /companies/10000000-0000-4000-8000-000000000002
+                - cell "Negotiation" [ref=e146]:
+                  - generic [ref=e147]: Negotiation
+                - cell "$32,000" [ref=e148]
+                - cell "Manager User" [ref=e149]
+                - cell "28/05/2026" [ref=e150]
+                - cell "Actions" [ref=e151]:
+                  - button "Actions" [ref=e152] [cursor=pointer]:
+                    - img
+                    - generic [ref=e153]: Actions
+              - row "Ledgerline pilot Nora Chen Ledgerline Finance Qualified $18,000 Sales Rep 18/06/2026 Actions" [ref=e154]:
+                - cell "Ledgerline pilot Nora Chen" [ref=e155]:
+                  - generic [ref=e156]:
+                    - link "Ledgerline pilot" [ref=e157] [cursor=pointer]:
+                      - /url: /deals/40000000-0000-4000-8000-000000000003
+                    - generic [ref=e158]: Nora Chen
+                - cell "Ledgerline Finance" [ref=e159]:
+                  - link "Ledgerline Finance" [ref=e160] [cursor=pointer]:
+                    - /url: /companies/10000000-0000-4000-8000-000000000003
+                - cell "Qualified" [ref=e161]:
+                  - generic [ref=e162]: Qualified
+                - cell "$18,000" [ref=e163]
+                - cell "Sales Rep" [ref=e164]
+                - cell "18/06/2026" [ref=e165]
+                - cell "Actions" [ref=e166]:
+                  - button "Actions" [ref=e167] [cursor=pointer]:
+                    - img
+                    - generic [ref=e168]: Actions
+          - generic [ref=e169]:
+            - generic [ref=e170]: 1-4 of 4
+            - generic [ref=e171]:
+              - button "Previous" [disabled]
+              - button "Next" [disabled]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e177] [cursor=pointer]:
+    - img [ref=e178]
